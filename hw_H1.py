@@ -6,8 +6,6 @@ class Player:
   def __init__(self, health):
     self.hp = health
 class Zombie(Player):
-  def heal(self,points):
-    self.hp += 5
   def bite(self, target):
     jaw = rn.choice(force)
     target.hp -= jaw
