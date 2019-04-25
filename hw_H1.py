@@ -48,10 +48,10 @@ while fight:                                                    #битва!
   print('zombie =' + str(zombie.hp))
   print('human =' + str(human.hp))
   if human.hp <= 0 or zombie.hp <= 0:
-        if human.hp > 0:
-      print("Human is winner!")
-      break
-    else:
-      print("Zombie if winner")
-      break
+      if human.hp > 0:
+        print("Human is winner!")
+        break
+      else:
+        print("Zombie if winner")
+        break
   time.sleep(1)
