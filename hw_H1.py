@@ -11,7 +11,7 @@ class Zombie(Player):                                   #удар зомби, з
     target.hp -= jaw
     self.hp += 6
     print('Oh no! Zombie bites him and damage ' + str(jaw) + '! Zombie get heal at 1')
-class Human(Player):
+class Survior(Player):
   def hit(self,target):                                              #удар человека
     kick = rn.choice(force)
     print('Human attacks zombie and damage is ' + str(kick) + 'hp')
@@ -23,7 +23,7 @@ class Human(Player):
 rules = True
 while rules:  
   zombie = Zombie(health = int(input('Enter zombie health: ')))              #вводим хп для игроков.Зомби дхоляк, поэтому хп, большего, чем у человека, у него быть не может
-  human = Human(health = int(input('Enter human health: ')))
+  human = Survior(health = int(input('Enter human health: ')))
   if zombie.hp < human.hp:
     break
   else:
