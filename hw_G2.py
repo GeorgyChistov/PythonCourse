@@ -12,4 +12,4 @@ def prime_numb_gen(n):             #Функция генерирует n-e пр
         else:
             primes.append(add)
             add += 1
-    print(primes[len(primes)-1])
+    yield primes[len(primes)-1]
